@@ -11,9 +11,8 @@
     "@mdi/font": "^7.0.96",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
-    "vue-materialize-datatable": "^1.0.4",
     "vue-router": "^4.0.3",
-    "vue3-easy-data-table": "^1.5.20",
+    "vue-table-dynamic": "^0.4.10",
     "vuetify": "^3.0.3",
     "vuex": "^4.0.0"
   },

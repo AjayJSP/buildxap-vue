@@ -29,53 +29,53 @@
 
         <v-list density="compact" nav>
           <router-link to="/">
-            <v-list-item prepend-icon="mdi-home-city" title="Dashboard" value=""> </v-list-item>
+            <v-list-item prepend-icon="mdi-home-city" title="Dashboard" value="dashboard"> </v-list-item>
           </router-link>
           <router-link to="/estimates">
-            <v-list-item prepend-icon="mdi-account" title="Estimates" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Estimates" value="estimates"></v-list-item>
           </router-link>
           <router-link to="/quotes">
-            <v-list-item prepend-icon="mdi-account" title="Quotes" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Quotes" value="quotes"></v-list-item>
           </router-link>
 
           <router-link to="/jobs">
-            <v-list-item prepend-icon="mdi-account" title="Jobs" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Jobs"></v-list-item>
           </router-link>
 
           <router-link to="/clients">
-            <v-list-item prepend-icon="mdi-account" title="Clients" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Clients"></v-list-item>
           </router-link>
 
           <router-link to="/contacts">
-            <v-list-item prepend-icon="mdi-account" title="Contacts" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Contacts"></v-list-item>
           </router-link>
 
           <router-link to="/job_plans">
-            <v-list-item prepend-icon="mdi-account" title="Job Plans" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Job Plans"></v-list-item>
           </router-link>
 
           <router-link to="/variations">
-            <v-list-item prepend-icon="mdi-account" title="Variations" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Variations"></v-list-item>
           </router-link>
 
           <router-link to="/cost_centre">
-            <v-list-item prepend-icon="mdi-account" title="Cost Centres" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Cost Centres"></v-list-item>
           </router-link>
 
           <router-link to="/catalogues">
-            <v-list-item prepend-icon="mdi-account" title="Catalogues" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Catalogues"></v-list-item>
           </router-link>
 
           <router-link to="/users">
-            <v-list-item prepend-icon="mdi-account" title="Users" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Users"></v-list-item>
           </router-link>
 
           <router-link to="/roles">
-            <v-list-item prepend-icon="mdi-account" title="Roles" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Roles"></v-list-item>
           </router-link>
 
           <router-link to="/setting">
-            <v-list-item prepend-icon="mdi-account" title="Setting" value=""></v-list-item>
+            <v-list-item prepend-icon="mdi-account" title="Setting"></v-list-item>
           </router-link>
         </v-list>
       </v-navigation-drawer>
@@ -104,6 +104,11 @@ export default {
 };
 </script>
 <style>
+a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
 nav a {
   font-weight: bold;
   color: #2c3e50;

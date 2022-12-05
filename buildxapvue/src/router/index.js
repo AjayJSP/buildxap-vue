@@ -2,7 +2,14 @@
 
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../components/Dashboard.vue";
-import Estimates from "@/components/Estimates.vue";
+// estimate
+import Estimates from "../components/Estimates/Estimates.vue";
+import Specification from "../components/Estimates/EstimateTabs/Specification.vue";
+import Plans from "../components/Estimates/EstimateTabs/Plans.vue";
+import EstimateCosting from "../components/Estimates/EstimateTabs/EstimateCosting.vue";
+import RequestsForQuote from "../components/Estimates/EstimateTabs/RequestsForQuote.vue";
+import EstimateDetails from "../components/Estimates/EstimateTabs/EstimateDetails.vue";
+
 import Jobs from "../components/Jobs.vue";
 import Quotes from "../components/Quotes.vue";
 import Timeline from "../components/Timeline.vue";
@@ -16,6 +23,7 @@ import Users from "../components/Users.vue";
 import Roles from "../components/Roles.vue";
 import Settings from "../components/Settings.vue";
 import LogOut from "../components/LogOut.vue";
+import EstimateNavigation from "../components/Navigations/EstimateNavigation.vue";
 
 const routes = [
   {
@@ -89,6 +97,41 @@ const routes = [
     name: "Settings",
     component: Settings,
   },
+  // Estimate Navigation
+  {
+    path: "/estimate/:id",
+    name: "EstimateNavigation",
+    component: EstimateNavigation,
+
+    children: [
+      {
+        path: "/estimate/:id/estimate_details",
+        name: "EstimateDetails",
+        component: EstimateDetails,
+      },
+      {
+        path: "/estimate/:id/plans",
+        name: "Plans",
+        component: Plans,
+      },
+      {
+        path: "/estimate/:id/estimate_costing",
+        name: "EstimateCosting",
+        component: EstimateCosting,
+      },
+      {
+        path: "/estimate/:id/request_for_quotes",
+        name: "RequestsForQuote",
+        component: RequestsForQuote,
+      },
+      {
+        path: "/estimate/:id/specification",
+        name: "Specification",
+        component: Specification,
+      },
+    ],
+  },
+
   {
     path: "/logOut",
     name: "LogOut",
