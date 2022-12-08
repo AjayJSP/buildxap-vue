@@ -101,6 +101,7 @@ const routes = [
   {
     path: "/estimate/:id",
     name: "EstimateNavigation",
+    redirect: "/estimate/:id/estimate_details",
     component: EstimateNavigation,
 
     children: [

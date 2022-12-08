@@ -40,7 +40,7 @@
                     <td>{{ item.date }}</td>
 
                     <td>
-                      <router-link :to="{ name: 'EstimateNavigation', params: { id: item.id } }">
+                      <router-link :to="{ name: 'EstimateNavigation', params: { id: 1 } }">
                         <v-btn small color="green">
                           <v-icon icon="mdi-pencil" />
                         </v-btn>
@@ -144,6 +144,7 @@ export default {
       console.log("handleCreateEstimate", obj);
       this.estimates.push(obj);
       this.openDrawer = false;
+      console.log("estimate", this.estimates);
     },
   },
 };
